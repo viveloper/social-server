@@ -11,6 +11,7 @@ const db = {
       location: 'London, UK'
     }
   ],
+  
   screams: [
     {
       userHandle: 'user',
