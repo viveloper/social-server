@@ -11,7 +11,7 @@ const db = {
       location: 'London, UK'
     }
   ],
-  
+
   screams: [
     {
       userHandle: 'user',
@@ -21,4 +21,28 @@ const db = {
       commentCount: 2
     }
   ]
-}
+};
+
+const userDetails = {
+  // Redux data
+  credentials: {
+    userId: 'NKDJLKSDJLFJKLSJDKLFJ',
+    email: 'user@email.com',
+    handle: 'user',
+    createdAt: '2019-03-15T....',
+    imageUrl: 'image/alsjdlfjlsdf',
+    bio: 'hello, my name is user',
+    website: 'user.com',
+    location: 'London, UK'
+  },
+  likes: [
+    {
+      userHandle: 'user',
+      screamId: 'hhejflslfkllglaslkdflafs'
+    },
+    {
+      userHandle: 'user',
+      screamId: 'gsgsbdlsdfljlkxjljlksjelk'
+    }
+  ]
+};
