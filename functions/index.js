@@ -11,16 +11,19 @@ const {
   addUserDetails,
   getAuthenticatedUser,
   getScream,
-  commentOnScream
+  commentOnScream,
+  likeScream,
+  unlikeScream,
+  deleteScream
 } = require('./handlers');
 
 // scream routes
 app.get('/screams', getAllScreams);
 app.post('/scream', authMiddleware, postOneScream);
 app.get('/scream/:screamId', getScream);
-// TODO: delete scream
-// TODO: like a scream
-// TODO: unlike a scream
+app.delete('/scream/:screamId', authMiddleware, deleteScream);
+app.get('/scream/:screamId/like', authMiddleware, likeScream);
+app.get('/scream/:screamId/unlike', authMiddleware, unlikeScream);
 app.post('/scream/:screamId/comment', authMiddleware, commentOnScream);
 
 // user routes
