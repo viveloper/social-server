@@ -11,7 +11,6 @@ const db = {
       location: 'London, UK'
     }
   ],
-
   screams: [
     {
       userHandle: 'user',
@@ -19,6 +18,14 @@ const db = {
       createdAt: '2020-01-10T03:35:54.961Z',
       likeCount: 5,
       commentCount: 2
+    }
+  ],
+  comments: [
+    {
+      userHandle: 'user',
+      screamId: 'alskjdfljasldkfjsla',
+      body: 'nice on mate!',
+      createdAt: '2020-01-10T03:35:54.961Z'
     }
   ]
 };
@@ -29,7 +36,7 @@ const userDetails = {
     userId: 'NKDJLKSDJLFJKLSJDKLFJ',
     email: 'user@email.com',
     handle: 'user',
-    createdAt: '2019-03-15T....',
+    createdAt: '2020-01-10T03:35:54.961Z',
     imageUrl: 'image/alsjdlfjlsdf',
     bio: 'hello, my name is user',
     website: 'user.com',
