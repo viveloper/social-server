@@ -15,7 +15,9 @@ const {
   commentOnScream,
   likeScream,
   unlikeScream,
-  deleteScream
+  deleteScream,
+  getUserDetails,
+  markNotificationsRead
 } = require('./handlers');
 
 // scream routes
@@ -33,6 +35,8 @@ app.post('/login', login);
 app.post('/user/image', authMiddleware, uploadImage);
 app.post('/user', authMiddleware, addUserDetails);
 app.get('/user', authMiddleware, getAuthenticatedUser);
+app.get('/user/:handle', getUserDetails);
+app.post('/notifications', authMiddleware, markNotificationsRead);
 
 // ============================================================
 // Create and Deploy Your First Cloud Functions
