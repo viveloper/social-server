@@ -2,6 +2,8 @@ const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 const authMiddleware = require('./util/authMiddleware');
+const cors = require('cors');
+app.use(cors());
 const { db } = require('./util/firebaseAdmin');
 const {
   getAllScreams,
